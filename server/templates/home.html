@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inicio</title>
+    <link href="{{ url_for('static', filename='CSS/home.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <h1 class="card-title display-4 text-primary">Detector de actividad maliciosa en la red</h1>
+    <hr class="border-primary">
+
+    <p class="lead text-primary">
+        ¿Cómo funciona esta aplicación?
+    </p>
+    <p class="lead text-muted">
+        Esta aplicación determina si existe actividad maliciosa en base al tráfico de red recogido en un log.
+    </p>
+    <p class="lead text-primary">
+        ¿Cuál fue la técnica utilizada para lograr dicho objetivo?
+    </p>
+    <p class="lead text-muted">
+        Se ha entrenado un modelo de inteligencia artificial con datasets de diferentes logs de tráfico de red con la finalidad de aprender a diferenciar varios tipos de ataques cibernéticos.
+    </p>
+    {% endblock %}
+</body>
+
+</html>

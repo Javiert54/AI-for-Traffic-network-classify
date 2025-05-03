@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Files</title>
+    <link href="{{ url_for('static', filename='CSS/predictions.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='JS/predictions.js') }}"></script>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <h1 class="card-title display-4 text-primary">Historial de predicciones</h1>
+    <hr class="border-primary">
+    
+    <div id="message" role="alert" hidden></div>
+    {% endblock %}
+</body>
+</html
