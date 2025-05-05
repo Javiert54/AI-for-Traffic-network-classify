@@ -1,33 +1,51 @@
 import pandas as pd
 import numpy as np
+import os
+from glob import glob
 
-def clean_dataset(df, threshold=0.8):
-# Cargar el dataset (reemplaza 'dataset.csv' con el nombre de tu archivo)
-    df = pd.read_csv("dataset.csv")
+def clean_and_convert_by_majority_type_chunked(input_filepath, output_filepath, chunksize=10000):
+    """
+    Limpia un archivo CSV en bloques, intentando convertir valores al tipo de dato mayoritario
+    en cada columna antes de eliminarlos, y guarda el resultado sobrescribiendo un archivo.
 
-    # Función para determinar si una columna es mayormente numérica
-    def is_mostly_numeric(series, threshold):
-        numeric_values = pd.to_numeric(series, errors='coerce')
-        numeric_ratio = numeric_values.notna().sum() / len(series)
-        return numeric_ratio >= threshold
+    Args:
+        input_filepath (str): Ruta del archivo CSV original.
+        output_filepath (str): Ruta del archivo donde guardar el CSV limpio.
+        chunksize (int): Tamaño del bloque para leer el archivo en partes.
+    """
+    def get_majority_dtype(series):
+        dtype_counts = series.map(type).value_counts()
+        if not dtype_counts.empty:
+            return dtype_counts.idxmax()
+        return None
 
-    # Identificar columnas mayormente numéricas
-    numeric_columns = [col for col in df.columns if is_mostly_numeric(df[col], threshold)]
+    def convert_value(value, target_type):
+        try:
+            return target_type(value)
+        except (ValueError, TypeError):
+            return np.nan
 
-    # Convertir solo las columnas mayormente numéricas a valores numéricos y eliminar filas con valores no numéricos
-    for col in numeric_columns:
-        df[col] = pd.to_numeric(df[col], errors='coerce')
+    cleaned_chunks = []
 
-    df_cleaned = df.dropna(subset=numeric_columns)
+    for chunk in pd.read_csv(input_filepath, chunksize=chunksize):
+        for col in chunk.columns:
+            majority_dtype = get_majority_dtype(chunk[col])
+            if majority_dtype:
+                chunk[col] = chunk[col].apply(lambda x: convert_value(x, majority_dtype))
+
+        chunk_cleaned = chunk.dropna()
+        cleaned_chunks.append(chunk_cleaned)
+
+    df_final = pd.concat(cleaned_chunks, ignore_index=True)
 
     # Guardar el dataset limpio
-    df_cleaned.to_csv("dataset_limpio.csv", index=False)
+    df_final.to_csv(output_filepath, index=False)
 
-    print("Dataset limpio guardado como 'dataset_limpio.csv'")
+    print(f"Dataset limpio guardado y sobrescrito en: '{output_filepath}'")
 
-BASE_DIR = os.getcwd() # Or specify a fixed base path if needed
-DATASET_DIR = os.path.join(BASE_DIR, "datasets") # Input directory
-csv_files = glob(os.path.join(DATASET_DIR, "*.csv")) # Find all CSV files
+BASE_DIR = os.getcwd()  # Or specify a fixed base path if needed
+DATASET_DIR = os.path.join(BASE_DIR, "datasets")  # Input directory
+csv_files = glob(os.path.join(DATASET_DIR, "*.csv"))  # Find all CSV files
+
 for file in csv_files:
-    df = pd.read_csv(file)
-    clean_dataset(df, threshold=0.8) # Call the function for each file
+    clean_and_convert_by_majority_type_chunked(file, file)  # Procesar archivo en chunks y sobrescribirlo
