@@ -1,0 +1,20 @@
+{
+    "sample_fraction": 0.1,
+    "chunk_size": 100000,
+    "labels": [
+        "Benign", 
+        "FTP-BruteForce", 
+        "SSH-Bruteforce", 
+        "DoS attacks-GoldenEye",
+        "DoS attacks-Slowloris", 
+        "DoS attacks-SlowHTTPTest", 
+        "DoS attacks-Hulk,Label", 
+        "DDOS attack-LOIC-UDP", 
+        "DDOS attack-HOIC", 
+        "Brute Force -Web",
+        "Brute Force -XSS", 
+        "SQL Injection", 
+        "Infilteration", 
+        "Bot"
+    ]
+}
