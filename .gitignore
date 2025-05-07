@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+resultado_completo.parquet
+resultado_completo.csv
 datasets/02-20-2018.csv
 __pycache__/
 *.py[cod]
