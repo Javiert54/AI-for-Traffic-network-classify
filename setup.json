@@ -16,5 +16,7 @@
         "SQL Injection", 
         "Infilteration", 
         "Bot"
-    ]
+    ],
+    "result_csv" : "resultado_completo.csv",
+    "result_parquet" : "resultado_completo.parquet"
 }
