@@ -1,8 +1,10 @@
 # Byte-compiled / optimized / DLL files
+merged_output.parquet
+merged_output.csv
 cleaned_dataset.csv
 cleaned_dataset.parquet
-resultado_completo.parquet
-resultado_completo.csv
+resultado.parquet
+resultado.csv
 datasets/*
 __pycache__/
 *.py[cod]
