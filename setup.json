@@ -1,8 +1,9 @@
 {
+    "datasets_path": "datasets",
     "sample_fraction": 0.1,
     "chunk_size": 100000,
-    "result_csv" : "merged_output.csv",
-    "result_parquet" : "merged_output.parquet",
+    "output_csv" : "merged_output.csv",
+    "output_parquet" : "merged_output.parquet",
     "navalues": ["N/a", "na", "Na", "NA", "NAN", "Nan", "NaN", "np.nan"],
     "max_columns": 84
 }
