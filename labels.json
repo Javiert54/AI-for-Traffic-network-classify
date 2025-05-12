@@ -6,12 +6,6 @@
     "DoS attacks-Slowloris": 4,
     "DoS attacks-SlowHTTPTest": 5,
     "DoS attacks-Hulk": 6,
-    "DDoS attacks-LOIC-HTTP": 8,
-    "DDOS attack-LOIC-UDP": 9,
-    "DDOS attack-HOIC": 10,
-    "Brute Force -Web": 11,
-    "Brute Force -XSS": 12,
-    "SQL Injection": 13,
-    "Infilteration": 14,
-    "Bot": 15
+    "DDOS attack-LOIC-UDP": 8,
+    "DDOS attack-HOIC": 9
 }
