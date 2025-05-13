@@ -1,16 +1,10 @@
 # Byte-compiled / optimized / DLL files
 merged_output.parquet
 merged_output.csv
-cleaned_dataset.csv
-cleaned_dataset.parquet
-resultado.parquet
-resultado.csv
 datasets/*
 __pycache__/
 *.py[cod]
 *$py.class
-datasets/*.csv
-datasets/*.zip
 # C extensions
 *.so
 
