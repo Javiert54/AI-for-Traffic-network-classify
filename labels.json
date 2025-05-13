@@ -3,11 +3,11 @@
     "FTP-BruteForce": 1,
     "DoS attacks-GoldenEye": 2,
     "DoS attacks-SlowHTTPTest": 3,
-    "DDoS attacks-LOIC-HTTP": 4,
-    "DDOS attack-LOIC-UDP": 5,
-    "DDOS attack-HOIC": 6,
-    "Brute Force -Web": 7,
-    "Brute Force -XSS": 8,
-    "SQL Injection": 9,
+    "DDOS attack-LOIC-UDP": 4,
+    "DDOS attack-HOIC": 5,
+    "Brute Force -Web": 6,
+    "Brute Force -XSS": 7,
+    "SQL Injection": 8,
+    "Label": 9,
     "Bot": 10
 }
