@@ -3,5 +3,6 @@
     "output_csv" : "merged_output.csv",
     "output_parquet" : "merged_output.parquet",
     "navalues": ["N/a", "na", "Na", "NA", "NAN", "Nan", "NaN", "np.nan"],
-    "max_columns": 84
+    "max_columns": 84,
+    "n_rows": 80000
 }
