@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+clean_dataset.csv
+clean_dataset.parquet
 merged_output.parquet
 merged_output.csv
 datasets/*

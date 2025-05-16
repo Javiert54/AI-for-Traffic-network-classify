@@ -1,7 +1,7 @@
 {
     "datasets_path": "datasets",
-    "output_csv" : "merged_dataset.csv",
-    "output_parquet" : "merged_dataset.parquet",
+    "dataset_csv" : "clean_dataset.csv",
+    "dataset_parquet" : "clean_dataset.parquet",
     "header": "header.json",
     "navalues": ["N/a", "na", "Na", "NA", "NAN", "Nan", "NaN", "np.nan"],
     "max_columns": 84,
