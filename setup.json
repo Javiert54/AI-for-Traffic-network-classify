@@ -2,7 +2,6 @@
     "datasets_path": "datasets",
     "dataset_csv" : "clean_dataset.csv",
     "dataset_parquet" : "clean_dataset.parquet",
-    "header": "header.json",
     "navalues": ["N/a", "na", "Na", "NA", "NAN", "Nan", "NaN", "np.nan"],
     "max_columns": 84,
     "n_rows": 80000
