@@ -3,6 +3,5 @@
     "dataset_csv" : "clean_dataset.csv",
     "dataset_parquet" : "clean_dataset.parquet",
     "navalues": ["N/a", "na", "Na", "NA", "NAN", "Nan", "NaN", "np.nan"],
-    "max_columns": 84,
     "n_rows": 80000
 }
