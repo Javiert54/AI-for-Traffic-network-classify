@@ -1,8 +1,30 @@
 {
     "datasets_path": "datasets",
-    "dataset_csv" : "clean_dataset.csv",
-    "dataset_parquet" : "clean_dataset.parquet",
-    "navalues": ["N/a", "na", "Na", "NA", "NAN", "Nan", "NaN", "np.nan"],
-    "take_full_dataset": false,
-    "n_rows": 80000
+    "dataset_csv": "clean_dataset.csv",
+    "dataset_parquet": "clean_dataset.parquet",
+    "navalues": [
+        "N/a",
+        "na",
+        "Na",
+        "NA",
+        "NAN",
+        "Nan",
+        "NaN",
+        "np.nan"
+    ],
+    "take_full_dataset": true,
+    "n_rows": 80000,
+    "balances": {
+        "Benign": 40000,
+        "FTP-BruteForce": 40000,
+        "DoS attacks-GoldenEye": 40000,
+        "DoS attacks-Slowloris": 40000,
+        "DoS attacks-SlowHTTPTest": 40000,
+        "DDOS attack-LOIC-UDP": 40000,
+        "DDOS attack-HOIC": 40000,
+        "Brute Force -Web": 40000,
+        "Brute Force -XSS": 40000,
+        "SQL Injection": 40000,
+        "Bot": 40000
+    }
 }
