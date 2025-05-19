@@ -12,8 +12,8 @@
         "NaN",
         "np.nan"
     ],
-    "take_full_dataset": true,
-    "n_rows": 80000,
+    "take_full_dataset": false,
+    "n_rows": 100000,
     "balances": {
         "Benign": 40000,
         "FTP-BruteForce": 40000,
