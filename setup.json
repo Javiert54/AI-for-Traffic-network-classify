@@ -13,18 +13,21 @@
         "np.nan"
     ],
     "take_full_dataset": false,
-    "n_rows": 100000,
     "balances": {
-        "Benign": 40000,
-        "FTP-BruteForce": 40000,
-        "DoS attacks-GoldenEye": 40000,
-        "DoS attacks-Slowloris": 40000,
-        "DoS attacks-SlowHTTPTest": 40000,
-        "DDOS attack-LOIC-UDP": 40000,
-        "DDOS attack-HOIC": 40000,
-        "Brute Force -Web": 40000,
-        "Brute Force -XSS": 40000,
-        "SQL Injection": 40000,
-        "Bot": 40000
+        "Benign": 1000,
+        "FTP-BruteForce": 60000,
+        "SSH-Bruteforce": 60000,
+        "Infilteration": 10000,
+        "DoS attacks-Hulk": 3000,
+        "DoS attacks-GoldenEye": 6000,
+        "DoS attacks-Slowloris": 3000,
+        "DoS attacks-SlowHTTPTest": 3000,
+        "DDOS attack-LOIC-UDP": 4000,
+        "DDOS attack-HOIC": 20000,
+        "Brute Force -Web": 20000,
+        "Brute Force -XSS": 10000,
+        "SQL Injection": 20000,
+        "Bot": 10000,
+        "Label": 0
     }
 }
