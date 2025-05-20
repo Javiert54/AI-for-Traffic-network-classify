@@ -12,24 +12,24 @@
         "NaN",
         "np.nan"
     ],
-    "take_full_dataset": true,
+    "take_full_dataset": false,
     "learning_rate": 0.01,
     "epochs": 10,
     "balances": {
-        "Benign": 1000,
+        "Benign": 1500,
         "FTP-BruteForce": 60000,
         "SSH-Bruteforce": 60000,
         "Infilteration": 10000,
-        "DoS attacks-Hulk": 3000,
+        "DoS attacks-Hulk": 5000,
         "DoS attacks-GoldenEye": 6000,
         "DoS attacks-Slowloris": 3000,
         "DoS attacks-SlowHTTPTest": 3000,
         "DDOS attack-LOIC-UDP": 4000,
-        "DDOS attack-HOIC": 20000,
+        "DDOS attack-HOIC": 40000,
         "Brute Force -Web": 20000,
         "Brute Force -XSS": 10000,
         "SQL Injection": 20000,
-        "Bot": 10000,
+        "Bot": 20000,
         "Label": 0
     }
 }
