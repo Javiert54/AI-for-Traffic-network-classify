@@ -12,7 +12,9 @@
         "NaN",
         "np.nan"
     ],
-    "take_full_dataset": false,
+    "take_full_dataset": true,
+    "learning_rate": 0.01,
+    "epochs": 10,
     "balances": {
         "Benign": 1000,
         "FTP-BruteForce": 60000,
