@@ -181,3 +181,4 @@ cython_debug/
 datasets/02-14-2018.csv
 flask-csv-api/app/routes.py
 raw_dataset.parquet
+flask-csv-api/trafic.csv
