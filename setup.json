@@ -1,7 +1,8 @@
 {
     "datasets_path": "datasets",
-    "dataset_csv": "clean_dataset.csv",
-    "dataset_parquet": "clean_dataset.parquet",
+    "raw_dataset_csv": "raw_dataset.csv",
+    "raw_dataset_parquet": "raw_dataset.parquet",
+    "final_dataset": "final_dataset.parquet",
     "navalues": [
         "N/a",
         "na",
