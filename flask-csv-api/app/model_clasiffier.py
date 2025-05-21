@@ -5,7 +5,6 @@ import torch
 import torch.nn as nn
 import joblib
 import json
-import sys
 
 # Definir la clase del modelo (debe ser idéntica a la usada para el entrenamiento)
 class NetFlowLSTM(nn.Module):
@@ -144,23 +143,3 @@ def predict_from_csv_path(input_csv_file_path: str):
         print(f"Ocurrió un error inesperado: {general_error}")
     return None, None, None, None
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Uso: python model_clasiffier.py <ruta_al_csv_de_entrada>")
-        sys.exit(1) # Salir si no se proporcionan los argumentos correctos
-
-    input_csv_path = sys.argv[1]
-    
-    pred_name, pred_probs, pred_code, label_mapping = predict_from_csv_path(input_csv_path)
-    
-    if pred_name is not None:
-        print(f"\n--- Predicción para {input_csv_path} ---")
-        print(f"Nombre de Clase Predicha: {pred_name}")
-        print(f"Código de Clase Predicha: {pred_code}")
-        print("\nProbabilidades de Clase:")
-        if pred_probs is not None and label_mapping is not None:
-            for i, prob_value in enumerate(pred_probs):
-                class_name_for_prob = label_mapping.get(i, f"Código desconocido: {i}")
-                print(f"  {class_name_for_prob} (código {i}): {prob_value:.4f}")
-        else:
-            print("No se pudieron obtener las probabilidades de clase.")
