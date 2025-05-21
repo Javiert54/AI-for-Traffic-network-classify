@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
-Full_dataset.csv
+
+raw_dataset.csv
 clean_dataset.csv
 clean_dataset.parquet
 merged_output.parquet
@@ -178,3 +179,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 datasets/02-14-2018.csv
+flask-csv-api/app/routes.py
+raw_dataset.parquet
