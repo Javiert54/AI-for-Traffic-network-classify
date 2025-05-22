@@ -34,7 +34,6 @@
         "Subflow Fwd Byts",
         "Init Fwd Win Byts",
         "Fwd Act Data Pkts",
-        "Fwd Seg Size Min",
-        "Sequence ID"
+        "Fwd Seg Size Min"
     ]
 }

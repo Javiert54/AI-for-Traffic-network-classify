@@ -2823,8 +2823,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97664' id='15' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1168'>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97664' id='17' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1168'>
                 <zone fixed-size='280' h='89926' id='3' is-fixed='true' name='Proporciones del dataset' w='65384' x='1231' y='1168'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2904,8 +2904,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97664' id='10' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1168'>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97664' id='12' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1168'>
                 <zone fixed-size='280' h='97664' id='3' is-fixed='true' name='Puertos utilizados según el tráfico' w='97538' x='1231' y='1168'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
