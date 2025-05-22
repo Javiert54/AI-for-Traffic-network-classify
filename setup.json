@@ -2,7 +2,7 @@
     "datasets_path": "datasets",
     "raw_dataset_csv": "raw_dataset.csv",
     "raw_dataset_parquet": "raw_dataset.parquet",
-    "final_dataset": "prueba.csv",
+    "final_dataset": "final_dataset.parquet",
     "navalues": [
         "N/a",
         "na",
@@ -13,9 +13,8 @@
         "NaN",
         "np.nan"
     ],
-    "take_full_dataset": false,
     "learning_rate": 0.01,
-    "epochs": 10,
+    "epochs": 100,
     "balances": {
         "Benign": 100,
         "FTP-BruteForce": 150,

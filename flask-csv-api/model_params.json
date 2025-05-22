@@ -1,5 +1,5 @@
 {
-    "sequence_length": 2,
+    "sequence_length": 15,
     "num_features": 31,
     "hidden_dim": 32,
     "output_dim": 14,
