@@ -16,8 +16,8 @@
     "learning_rate": 0.01,
     "epochs": 100,
     "balances": {
-        "Benign": 100,
-        "FTP-BruteForce": 150,
+        "Benign": 0,
+        "FTP-BruteForce": 15,
         "SSH-Bruteforce": 0,
         "Infilteration": 0,
         "DoS attacks-Hulk": 0,

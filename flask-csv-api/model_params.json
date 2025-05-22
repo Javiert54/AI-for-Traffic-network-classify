@@ -1,5 +1,5 @@
 {
-    "sequence_length": 15,
+    "sequence_length": 8,
     "num_features": 31,
     "hidden_dim": 32,
     "output_dim": 14,
@@ -34,6 +34,7 @@
         "Subflow Fwd Byts",
         "Init Fwd Win Byts",
         "Fwd Act Data Pkts",
-        "Fwd Seg Size Min"
+        "Fwd Seg Size Min",
+        "Sequence ID"
     ]
 }
