@@ -14,10 +14,10 @@
         "np.nan"
     ],
     "learning_rate": 0.01,
-    "epochs": 100,
+    "epochs": 200,
     "balances": {
-        "Benign": 0,
-        "FTP-BruteForce": 15,
+        "Benign": 100,
+        "FTP-BruteForce": 0,
         "SSH-Bruteforce": 0,
         "Infilteration": 0,
         "DoS attacks-Hulk": 0,

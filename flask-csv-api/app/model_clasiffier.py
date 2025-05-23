@@ -26,7 +26,7 @@ def load_artifacts(model_params_path='model_params.json',
         # Cargar parámetros del modelo
         with open(model_params_path, 'r') as f:
             params = json.load(f)
-        
+
         INPUT_DIM = params['num_features']
         SEQUENCE_LENGTH = params['sequence_length']
         HIDDEN_DIM = params['hidden_dim']
@@ -142,4 +142,3 @@ def predict_from_csv_path(input_csv_file_path: str):
     except Exception as general_error:
         print(f"Ocurrió un error inesperado: {general_error}")
     return None, None, None, None
-
