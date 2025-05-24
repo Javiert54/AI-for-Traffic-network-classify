@@ -16,7 +16,7 @@
     "learning_rate": 0.01,
     "epochs": 200,
     "balances": {
-        "Benign": 100,
+        "Benign": 0,
         "FTP-BruteForce": 0,
         "SSH-Bruteforce": 0,
         "Infilteration": 0,
@@ -25,7 +25,7 @@
         "DoS attacks-Slowloris": 0,
         "DoS attacks-SlowHTTPTest": 0,
         "DDOS attack-LOIC-UDP": 0,
-        "DDOS attack-HOIC": 0,
+        "DDOS attack-HOIC": 400,
         "Brute Force -Web": 0,
         "Brute Force -XSS": 0,
         "SQL Injection": 0,
